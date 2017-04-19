@@ -4,30 +4,85 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
+      <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+
+      <!-- Roboto Condensed 300/700 bold and italics-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+     <!-- Nav bar CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
 
-    <!-- Top nav bar (fixed) -->
+
+
+       <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+        <h2 id="Compose_Tweet">Compose Tweet <hr width = 100%> </h2>
+        <form class = "tweet-form" action="/tweets" method="post" enctype ="application/x-www-form-urlencoded">
+          <textarea id = "tweet-input" name="text" placeholder="What are you humming about?"></textarea>
+          <input id ="tweet-submit" type="submit" value="Tweet">
+          <span id="tweet-char" class="counter">140</span>
+        </form>
+      </section>
+
+
+
+
+      <ul class="generic-list">
+        <li class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, maxime!</li>
+        <li class="item">Magnam, quas est iusto vel, quo nostrum ex ipsum excepturi.</li>
+        <li class="item">Impedit distinctio consectetur dolorem itaque facere doloribus laborum quam quos.</li>
+        <li class="item">Nisi aperiam dolores necessitatibus a magnam voluptates quis voluptate sit.</li>
+        <li class="item">Voluptate corporis ipsa, eos quo atque aspernatur omnis. Iusto, laudantium!</li>
+        <li class="item">Nobis est esse, voluptatibus repudiandae, modi dolore cum non accusantium.</li>
+        <li class="item">Ad consequuntur natus totam iste optio quaerat nulla hic qui.</li>
+        <li class="item">Voluptatibus cum sit et culpa praesentium porro enim impedit doloribus.</li>
+        <li class="item">Ipsum accusantium sed rerum iure aut rem modi, ullam dolore!</li>
+        <li class="item">At mollitia possimus repellat, quasi. Cupiditate totam voluptas, consectetur numquam.</li>
+        <li class="item">Officiis quasi, ipsa sapiente perspiciatis numquam, provident veniam. Recusandae, reprehenderit.</li>
+        <li class="item">Dolore vitae explicabo, deleniti quisquam? Asperiores sint ea officiis consectetur.</li>
+        <li class="item">Odit illum aliquid excepturi officia animi nulla distinctio doloremque iure!</li>
+        <li class="item">Adipisci mollitia itaque numquam fuga? Dolorem sapiente nam vitae doloribus!</li>
+        <li class="item">Architecto aspernatur dolorum, suscipit! Quae debitis dolor hic repellendus voluptatum!</li>
+        <li class="item">Eaque incidunt odit nihil, quibusdam excepturi pariatur totam amet natus?</li>
+        <li class="item">Quisquam numquam illo ut, esse quibusdam dolorum! Sed, corporis, voluptates.</li>
+        <li class="item">Itaque quasi, architecto autem? Culpa voluptatem itaque, accusantium maxime ipsa!</li>
+        <li class="item">Enim doloremque possimus, iste eius temporibus saepe pariatur autem obcaecati!</li>
+        <li class="item">Nulla delectus at amet quod ea ratione quo voluptatem repellat!</li>
+      </ul>
     </main>
 
+
+
+
   </body>
+
+
+
 </html>
