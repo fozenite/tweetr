@@ -1,13 +1,12 @@
 $( document ).ready(function() {
 
-  let tweetSubmit = $('#tweet-submit');
-  let tweetChar = $('#tweet-char');
   let eventTrigger = 0;
+
 
 $('.new-tweet').find('#tweet-input').keyup(function(event){
   let tweetCharVal = 140 - $(this).closest('.new-tweet').find('#tweet-input').val().length;
 
-  if(tweetCharVal <= 0){
+  if(tweetCharVal < 0){
     $('.new-tweet').find('.counter').css({"color": "red"});
   } else {
     $('.new-tweet').find('.counter').css({"color": "black"});
