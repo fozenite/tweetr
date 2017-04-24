@@ -1,34 +1,37 @@
+@import '_layoutSass';
+
+@mixin padNavs($padAmount){
+  padding-left: $padAmount;
+  padding-right: $padAmount;
+}
+
 #nav-bar {
   position: fixed;
   background-color: #00a087;
   height: 80px;
   width: 100%;
-  padding-left: 2em;
-  padding-right: 2em;
+  @include padNavs(2em);
   z-index: 1;
 
-}
-
-#nav-bar .logo {
-
+  .logo {
   height: 80px;
   width: 80px;
   float: left;
   margin-right: 10px;
+  }
 
-}
-
-#nav-bar .header {
+  .header {
   color: #e8fdff;
   float: left;
   font-size: 200%;
   line-height: 80px;
+  }
 
-}
-
-#nav-bar .compose {
+  .compose {
   float: right;
   height: 70px;
-
   padding-top: 0.5em;
+  }
+
 }
+

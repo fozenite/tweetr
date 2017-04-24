@@ -36,6 +36,12 @@ main .new-tweet {
   display: inline-block;
 }
 
+#error-message {
+  color: red;
+  margin: auto;
+  text-align: center;
+}
+
 
 main #tweet-data {
   border-color: #D3D3D3;
@@ -112,8 +118,14 @@ main #tweet-data .tweet-footer .tweet-buttons {
   height: 0.5em;
   font-size: 50%;
   padding-top: 0.5em;
+  visibility: hidden;
 
 }
+
+main #tweet-data .tweet-box:hover .tweet-buttons {
+  visibility: visible;
+}
+
 
 main #tweet-data .tweet-footer .tweet-buttons .response-button {
   height: 2.5em;

@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+<!-- /*    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />  -->
 
      <!-- Nav bar CSS -->
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/navSass.css" type="text/css" />
 
     <!-- New Tweet CSS -->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweetSass.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -33,14 +33,11 @@
   </head>
 
   <body>
-
-
-
-       <!-- Top nav bar (fixed) -->
+    <!-- Nav bar -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-
+      <img class="compose" src="http://4.bp.blogspot.com/-dfzZoTbr17I/Vfozj4tkL-I/AAAAAAAAHJE/9tIqgs6N28M/s320/compose%2Bmessage%2Bbutton%2Bin%2Bassistant%2Bmenu%2Bin%2BGalaxy%2BS5.png" alt="Compose">
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -51,14 +48,12 @@
           <textarea id = "tweet-input" name="text" placeholder="What are you humming about?"></textarea>
           <input id ="tweet-submit" type="submit" value="Tweet">
           <span id="tweet-char" class="counter">140</span>
+          <p id = "error-message"></p>
         </form>
       </section>
-
+    <!-- Our new tweets and tweets from the database are loaded here -->
       <section id ="tweet-data">
-
-
       </section>
-
     </main>
 
 

@@ -1,0 +1,126 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/*
+ * Global layout stuff
+ */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  color: #244751;
+  background-color: #eee;
+  position: relative;
+  z-index: -1; }
+
+main {
+  width: 450px;
+  margin: auto;
+  background-color: #fff;
+  padding-top: 140px;
+  padding-left: 40px;
+  padding-right: 40px; }
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+.gray_back, main .new-tweet, main #tweet-data .tweet-header {
+  background-color: #eee; }
+
+#Compose_Tweet {
+  line-height: 0.2em; }
+
+main .new-tweet {
+  border-color: #D3D3D3;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 5px; }
+
+#tweet-input {
+  width: 100%;
+  display: block;
+  margin: auto; }
+
+#tweet-submit {
+  margin-top: 0.05em;
+  line-height: 1em;
+  display: inline-block;
+  margin-right: 73.5%; }
+
+#tweet-char {
+  display: inline-block; }
+
+#error-message {
+  color: red;
+  margin: auto;
+  text-align: center; }
+
+main #tweet-data {
+  border-color: #D3D3D3; }
+  main #tweet-data .tweet-box {
+    border-style: solid;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 1em;
+    border-radius: 2px;
+    margin-bottom: 1em;
+    opacity: 0.75; }
+  main #tweet-data .tweet-box:hover {
+    opacity: 1.0; }
+  main #tweet-data .tweet-header {
+    padding-top: 0.5em;
+    width: 100%;
+    height: 4em;
+    padding-left: 0.5em; }
+  main #tweet-data .tweet-user-name {
+    margin: 0;
+    float: left;
+    font-family: 'Pacifico', cursive; }
+  main #tweet-data .tweet-image {
+    border-radius: 5px;
+    float: left;
+    margin-right: 0.5em; }
+  main #tweet-data .tweet-user-handle {
+    margin: 0;
+    float: right;
+    padding-right: 0.5em; }
+  main #tweet-data .tweet-content {
+    height: 6em;
+    background-color: white;
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    word-wrap: break-word; }
+  main #tweet-data .tweet-footer {
+    padding-left: 0.5em;
+    padding-right: 5px;
+    height: 2em; }
+    main #tweet-data .tweet-footer .tweet-buttons {
+      float: right;
+      height: 0.5em;
+      font-size: 50%;
+      padding-top: 0.5em;
+      visibility: hidden; }
+      main #tweet-data .tweet-footer .tweet-buttons .response-button {
+        height: 2.5em;
+        width: 2.5em;
+        line-height: 2em; }
+  main #tweet-data .tweet-timestamp {
+    line-height: 2em; }
+  main #tweet-data .tweet-box:hover .tweet-buttons {
+    visibility: visible; }
+
+/*# sourceMappingURL=new-tweetSass.css.map */
